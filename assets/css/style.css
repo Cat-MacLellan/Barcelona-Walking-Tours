@@ -2,6 +2,10 @@
 
 /*---------------------navbar */
 
+.navbar {
+    background-color: #ffffff;
+}
+
 .navbar-brand img {
     height: 80px;
 }
