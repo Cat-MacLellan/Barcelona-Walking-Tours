@@ -8,6 +8,7 @@
 
 .navbar-brand img {
     height: 80px;
+    transition: 1s;
 }
 
 .navbar-nav {
