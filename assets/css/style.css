@@ -11,5 +11,34 @@
 }
 
 
+/*---------------------header */
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background: url(../images/headerimg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-shadow: 2px 2px #383737;
+}
+
+.darken {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    );
+}
 
 
+.btn {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #f78a4f;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #fc7e3a
+}
