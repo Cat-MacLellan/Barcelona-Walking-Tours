@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <!---navbar and logo --->
-<nav class="navbar navbar-light sticky-top navbar-expand-lg">
+<nav id="top" class="navbar navbar-light sticky-top navbar-expand-lg">
     <a class="navbar-brand" href="#">
       <img id="logo" src="assets/images/logo2.png">
     </a>
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav stroke">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Tours</a>
@@ -48,12 +48,34 @@
             <div class="col-12 text-center">
                 <h1 class="font-weight-bold">Barcelona Walking Tours</h1>
                 <p class="col-md-6 offset-md-3 lead font-weight-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam </p>
-                <button type="button" class="btn">Explore</button>
+                <button href="#home" type="button" class="btn">Explore</button>
             </div>
         </div>
     </div>
 </header>
+<section-home id="home" class="container-fluid ">
+    <div class="col-lg-12 home row text-center">
+        <div class="col-md-4">
+            <img class="mx-auto" src="assets/images/tour_icon.png">
+            <h2>Walking Tours</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <button type="button" class="btn btn-home">See More</button>
+        </div>
+         <div class="col-md-4">
+            <img class="mx-auto" src="assets/images/tree_icon.png">
+            <h2>Sustainable Archirecture</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <button type="button" class="btn btn-home">See More</button>
+        </div>
+         <div class="col-md-4">
+            <img class="mx-auto" src="assets/images/map_icon.png">
+            <h2>Visiting Barcelona?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <button type="button" class="btn btn-home">See More</button>
+        </div>
+    </div>
 
+</section-home>
 
 </body>
 

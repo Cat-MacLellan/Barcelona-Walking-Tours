@@ -40,10 +40,33 @@
 .btn {
     color: #ffffff;
     font-weight: 600;
-    background-color: #f78a4f;
+    background-color: #FFBD59;
 }
 
 .btn:hover {
     color: #ffffff;
+    background-color: #fc7e3a
+}
+
+/*---------------------home */
+
+.home img {
+    height:200px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.btn-home {
+    color: #000000;
+    font-weight: 600;
+    background-color: #FFBD59;
+    border-color: transparent;
+}
+
+.btn-home:hover {
+    color: #000000;
     background-color: #fc7e3a
 }
