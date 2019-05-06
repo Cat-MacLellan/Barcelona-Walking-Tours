@@ -19,21 +19,20 @@
 /*---------------------header */
 
 .masthead {
-  height: 100vh;
-  min-height: 500px;
-  background: url(../images/headerimg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  text-shadow: 2px 2px #383737;
+    height: 100vh;
+    min-height: 500px;
+    background: url(../images/headerimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-shadow: 2px 2px #383737;
 }
 
 .darken {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    );
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4));
 }
 
 
@@ -49,9 +48,12 @@
 }
 
 /*---------------------home */
+#home {
+    padding: 200px;
+}
 
 .home img {
-    height:200px;
+    height: 200px;
     padding-top: 20px;
 }
 
@@ -69,4 +71,41 @@ h2 {
 .btn-home:hover {
     color: #000000;
     background-color: #fc7e3a
+}
+
+/*---------------------tour-intro */
+#tour-intro {
+    padding: 200px;
+}
+
+.card {
+    border: none;
+
+}
+
+.card-img {
+    height: 450px;
+    filter: brightness(80%);
+}
+
+.card-text  {
+    display: none;
+    position: relative;
+    background-color: #fc7e3a;
+    padding: 0px 10px 0px 10px ;
+}
+
+
+.img-hover-zoom {
+    overflow: hidden;
+    
+}
+
+
+.img-hover-zoom img {
+    transition: transform 2s ease-in-out;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.3);
 }
