@@ -15,7 +15,6 @@
     padding-left: 30px;
 }
 
-
 /*---------------------header */
 
 .masthead {
@@ -49,7 +48,7 @@
 
 /*---------------------home */
 .home {
-    padding: 100px;
+    padding: 0px 0px 0px 20px 
 }
 
 .home img {
@@ -74,9 +73,6 @@ h2 {
 }
 
 /*---------------------tour-intro */
-#tour-intro {
-    padding: 200px;
-}
 
 .card {
     border: none;
@@ -85,10 +81,10 @@ h2 {
 
 .card-img {
     height: 450px;
-    filter: brightness(80%);
 }
 
 .card-text  {
+    color: #ffffff;
     display: none;
     position: relative;
     background-color: #fc7e3a;
@@ -114,6 +110,14 @@ h2 {
 }
 
 .tour-intro {
-    padding: 150px 0px 150px 0px;
+    padding: 100px 0px 100px 0px;
     background-color: #fff9ef;
+}
+
+/*---------------------tour-intro */
+
+@media (min-width: 1200px) {
+    .home {
+        padding: 100px;
+    }
 }
