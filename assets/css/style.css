@@ -47,8 +47,9 @@
 }
 
 /*---------------------home */
+
 .home {
-    padding: 0px 0px 0px 20px 
+    padding: 0px 0px 0px 20px
 }
 
 .home img {
@@ -72,29 +73,53 @@ h2 {
     background-color: #fc7e3a
 }
 
-/*---------------------tour-intro */
+
+/*---------------------tour-intro-mobile */
+
+.mobileTourTitle {
+    padding-top: 30px;
+}
 
 .card {
+    width: 10rem;
     border: none;
-
+    padding-left: 10px;
 }
 
-.card-img {
-    height: 450px;
+
+.card-img-top {
+    max-height: 220px;
 }
 
-.card-text  {
+.card-text {
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #FFBD59;
+}
+
+/*---------------------tour-intro-desktop */
+
+#viewDesktop {
+    display: none;
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.cardTextDesktop {
     color: #ffffff;
     display: none;
     position: relative;
     background-color: #fc7e3a;
-    padding: 0px 10px 0px 10px ;
+    padding: 0px 10px 0px 10px;
 }
 
 
 .img-hover-zoom {
     overflow: hidden;
-    
 }
 
 .img-hover-zoom img {
@@ -114,10 +139,36 @@ h2 {
     background-color: #fff9ef;
 }
 
-/*---------------------tour-intro */
+/*---------------------media queries */
 
 @media (min-width: 1200px) {
     .home {
         padding: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-img {
+        height: 450px;
+        width: auto;
+    }
+    .card-deck {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+       padding-left: 0px;
+    
+    }
+}
+
+@media (min-width: 1200px) { 
+    #viewDesktop {
+        display: block;
+    }
+    #viewMobile {
+        display: none;
     }
 }
