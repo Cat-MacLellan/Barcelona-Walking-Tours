@@ -66,9 +66,8 @@ h2 {
 
 .btn-home:hover {
     color: #000000;
-    background-color: #fc7e3a
+    background-color: #fc7e3a;
 }
-
 
 /*---------------------tour-intro-mobile */
 
@@ -82,7 +81,6 @@ h2 {
     padding-left: 10px;
 }
 
-
 .card-img-top {
     max-height: 220px;
 }
@@ -95,7 +93,7 @@ h2 {
 
 /*---------------------tour-intro-desktop */
 
-#viewDesktop {
+.viewDesktop {
     display: none;
 }
 
@@ -135,6 +133,38 @@ h2 {
     background-color: #fff9ef;
 }
 
+/*---------------------tour-one */
+
+.book-button {
+    padding-bottom: 40px;
+}
+
+.tour-body {
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tour-content {
+    padding-bottom: 30px;
+}
+
+.tour-img {
+    height: 200px;
+    width: 200px;
+}
+
+#modal-link {
+    cursor: pointer;
+    color: #fc7e3a;
+}
+/*---------------------map */
+
+.map {
+    height: 300px;
+    border-radius: 5px;
+}
+
 /*---------------------media queries */
 
 @media (min-width: 1200px) {
@@ -155,16 +185,16 @@ h2 {
 
 @media (min-width: 768px) {
     .card {
-       padding-left: 0px;
-    
+        padding-left: 0px;
+
     }
 }
 
-@media (min-width: 1200px) { 
-    #viewDesktop {
+@media (min-width: 1200px) {
+    .viewDesktop {
         display: block;
     }
-    #viewMobile {
+    .viewMobile {
         display: none;
     }
 }

@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
@@ -41,7 +40,6 @@
             </ul>
         </div>
     </nav>
-
     <!----------------------header---->
     <header class="masthead">
         <div class="container-fluid h-100 darken">
@@ -84,7 +82,7 @@
     </section-home>
     <!----------------------tour-intro-mobile---->
     <section-tour-mobile id="tour-intro">
-        <div id="viewMobile" class="container-fluid text-center">
+        <div class="viewMobile container-fluid text-center">
             <div>
                 <h2 class="mobileTourTitle">Walking Tours</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -99,7 +97,7 @@
                     </a>
                     </div>
                 </div>
-                <div class="col-xs-2 align-self-center">
+                <div class="col-xs-2">
                     <div class="card">
                         <a href="#"><img class="card-img-top" src="assets/images/gothis.jpg"></img>
                     <div class="card-text">
@@ -140,7 +138,7 @@
     </section-tour-mobile>
     <!----------------------tour-intro-desktop---->
     <section-tour-desktop id="tour-intro">
-        <div id="viewDesktop" class="container-fluid tour-intro">
+        <div class="viewDesktop container-fluid tour-intro">
             <div class="col-lg-6 offset-lg-3 text-center">
                 <h2 class="tour-intro-title">Walking Tours</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -184,12 +182,106 @@
             </div>
         </div>
     </section-tour-desktop>
+    <!----------------------tour-one---->
+    <tour-one-mobile id="gaudi-tour">
+        <div class="row tour-body container-fluid col-lg-12 ">
+            <div class="col-md-6 tour-content">
+                <h2 class="mobileTourTitle">Gaudi</h2>
+                <p class="tour-text">Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city. This walking tour will start at one of Gaudi's most famous works,
+                    <a id="modal-link" data-toggle="modal" data-target="#sangradaModal" class="font-weight-bold">La Sagraga Familia</a>, and will end with an exploration of Gaudi's fascinating
+                    <a id="modal-link" data-toggle="modal" data-target="#parcModal" class="font-weight-bold">La Parc Guell</a>. Passing along the way other wonders such as his Casa Batllo and Casa Mila.</p>
+                <button data-toggle="modal" data-target="#bookingform" type="button" class="btn">Book Now</button>
+            </div>
+            <div id="gaudiMap" class="col-md-6 justify-content-center map"></div>
+        </div>
+    </tour-one-mobile>
+    <!----------------------tour-one-modals---->
+    <tour-one-modals>
+        <div class="modal fade" id="sangradaModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-center" role="document">
+                <div class="container modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sangrada</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        One of gaudi's most famous work, La Sagrada Familia has been in construction since 1892 and is not due to be finished until 2026 - a century after Gaudi's death. Gaudi combined Gothic with curvilinear Art Nouveu forms and his own geomentic style to create
+                        this masterpiece.
+                    </div>
+                    <div>
+                        <img class="img-thumbnail" src="assets/images/familia.jpg"></img>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="parcModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-center" role="document">
+                <div class="container modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sangrada</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        Parc Guell was built between 1900 and 1914. This is a garden complex that has a series of dynamically designed buildings, including Gaudi's house.
+                    </div>
+                    <div>
+                        <img class="img-thumbnail" src="assets/images/parc_guell2.jpg"></img>
+                        <img class="img-thumbnail" src="assets/images/parc_guell3.jpg"></img>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------booking-modal---->
+        <div class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </tour-one-modals>
+
+
 </body>
 
 <!---Jquery and Bootstrap JS ---->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/maps.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
 
 
 </html>
