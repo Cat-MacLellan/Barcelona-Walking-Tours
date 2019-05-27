@@ -45,7 +45,7 @@
                     <a class="nav-link" href="#">How To Help</a>
                 </li>
             </ul>
-            </div>
+        </div>
     </nav>
     <!----------------------header---->
     <header class="masthead">
@@ -62,7 +62,7 @@
         </div>
     </header>
     <!----------------------home---->
-    <section-home id="home">
+    <section id="home">
         <div class="container-fluid home">
             <div class="row text-center">
                 <div class="col-xs-2 col-md-4">
@@ -86,155 +86,46 @@
                 </div>
             </div>
         </div>
-    </section-home>
+    </section>
+    <!----------------------Tours---->
 
-    <!----------------------tour-one---->
-    <tour-one id="gaudi-tour">
-        <div class="row tour-body container-fluid col-lg-12 ">
-            <div class="col-md-6 tour-content">
-                <h2 class="mobileTourTitle">Gaudi</h2>
-                <p class="tour-text">Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city. This walking tour will start at one of Gaudi's most famous works,
-                    <a id="modal-link" data-toggle="modal" data-target="#sangradaModal" class="font-weight-bold">La Sagraga Familia</a>, and will end with an exploration of Gaudi's fascinating
-                    <a id="modal-link" data-toggle="modal" data-target="#parcModal" class="font-weight-bold">La Parc Guell</a>. Passing along the way other wonders such as his Casa Batllo and Casa Mila.</p>
-                <button data-toggle="modal" data-target="#bookingform" type="button" class="btn">Book Now</button>
-            </div>
-            <div id="gaudiMap" class="col-md-6 justify-content-center map"></div>
-        </div>
-    </tour-one>
-    <!----------------------tour-one-modals---->
-    <tour-one-modals>
-        <div class="modal fade" id="sangradaModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-center" role="document">
-                <div class="container modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Sangrada</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-                </button>
-                    </div>
-                    <div class="modal-body">
-                        One of gaudi's most famous work, La Sagrada Familia has been in construction since 1892 and is not due to be finished until 2026 - a century after Gaudi's death. Gaudi combined Gothic with curvilinear Art Nouveu forms and his own geomentic style to create
-                        this masterpiece.
-                    </div>
-                    <div>
-                        <img class="img-thumbnail" src="assets/images/familia.jpg"></img>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    <section>
+        <div class='container'>
+            <h2>Choose your tour:</h2>
+            <input type='hidden' name='tour' value=false />
+            <div class='container'>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='tour' value='gaudi' type='radio' class='form-check-input'>Gaudi Tour</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='tour' value='gothic' type='radio' class='form-check-input'>Gothic Tour</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='tour' value='culture' type='radio' class='form-check-input'>Culture</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='tour' value='transport' type='radio' class='form-check-input'>Transport</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='tour' value='thefuture' type='radio' class='form-check-input'>The Future</button>
+                    </label>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="parcModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-center" role="document">
-                <div class="container modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Parc Guell</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-                </button>
-                    </div>
-                    <div class="modal-body">
-                        Parc Guell was built between 1900 and 1914. This is a garden complex that has a series of dynamically designed buildings, including Gaudi's house.
-                    </div>
-                    <div>
-                        <img class="img-thumbnail" src="assets/images/parc_guell2.jpg"></img>
-                        <img class="img-thumbnail" src="assets/images/parc_guell3.jpg"></img>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+            <!--The Map-->
+            <div class='container'>
+                <div id='map'></div>
             </div>
         </div>
-        <!----------------------booking-modal---->
-        <div class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Booking Enquiry</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label"></label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label"></label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send Enquiry</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </tour-one-modals>
-    <!----------------------tour-two---->
-    <tour-two id="gothic-tour">
-        <div class="row tour-body container-fluid col-lg-12 ">
-            <div id="gaudiMap" class="col-md-6 justify-content-center map"></div>
-            <div class="col-md-6 tour-content">
-                <h2 class="mobileTourTitle">Gothic Quarter</h2>
-                <p class="tour-text">Starting at the
-                    <a id="modal-link" data-toggle="modal" data-target="#basilica" class="font-weight-bold">La Basilica De Santa Maria del Pi</a>, this tour will take you on a journey through Barcelona's Gothic Quarter, host to some of the city's most
-                    historic buildings, such as the famous<a id="modal-link" data-toggle="modal" data-target="#cathedral" class="font-weight-bold"> La Cathedral Del Santa Eulaia</a></p>
-                <button data-toggle="modal" data-target="#bookingform" type="button" class="btn">Book Now</button>
-            </div>
-        </div>
-    </tour-two>
-    <!----------------------tour-two-modals---->
-    <tour-two-modals>
-        <div class="modal fade" id="basilica" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-center" role="document">
-                <div class="container modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">La Basilica De Santa Maria del Pi</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-                </button>
-                    </div>
-                    <div class="modal-body">
-                        This 15th century gothic church features a rose stained glass window on the front facade, above the gothic arch of the main entrance. The church also has a functioning bell tower. The largest of the six bells, weighing 1806kg, has been named Antonia.
-                    </div>
-                    <div>
-                        <img class="img-thumbnail" src="assets/images/santa_maria.jpg"></img>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="cathedral" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-center" role="document">
-                <div class="container modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Cathedral Del Santa Eulaia</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-                </button>
-                    </div>
-                    <div class="modal-body">
-                        Parc Guell was built between 1900 and 1914. This is a garden complex that has a series of dynamically designed buildings, including Gaudi's house.
-                    </div>
-                    <div>
-                        <img class="img-thumbnail" src="assets/images/cathedral.png"></img>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </tour-two-modals>
+    </section>
 </body>
 
 <!---Jquery and Bootstrap JS ---->
