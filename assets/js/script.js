@@ -27,4 +27,24 @@ $('a').click(function() {
 });
 
 
+function showTourInfo(tourName) {
+  $('.tour-info').each(function(index) {
+    if ($(this).attr("id") == tourName) {
+      $(this).toggle(2000);
+    }
+    else {
+      $(this).hide(1000);
+    }
+  });
+}
 
+function changeSection(section) {
+  $('.section').each(function(index) {
+    if ($(this).attr("id") == section) {
+      $(this).show('slow');
+    }
+    else {
+      $(this).hide('slow')
+    }
+  });
+}

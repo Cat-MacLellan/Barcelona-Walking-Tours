@@ -28,22 +28,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tours</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#gaudi-tour">Gaudi Tour</a>
-                        <a class="dropdown-item" href="#gothic-tour">Gothic Quarter</a>
-                        <a class="dropdown-item" href="#entertainment">Entertainment</a>
-                        <a class="dropdown-item" href="#transport">Transport</a>
-                        <a class="dropdown-item" href="#future">The Future</a>
-                    </div>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sustainable Archirecture</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">How To Help</a>
-                </li>
+                    <a class="nav-link" href="#">Tours</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sustainable Archirecture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How To Help</a>
+                    </li>
             </ul>
         </div>
     </nav>
@@ -69,14 +61,14 @@
                     <img class="mx-auto" src="assets/images/tour_icon.png">
                     <h2>Walking Tours</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <a href="#tour-intro"><button type="button" class="btn btn-home">See More</button>
+                    <a><button type="button" class="btn btn-home" onClick="changeSection('tour-section')">See More</button>
                     </a>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/tree_icon.png">
                     <h2>Sustainable Archirecture</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <button type="button" class="btn btn-home">See More</button>
+                    <button type="button" class="btn btn-home" onClick="changeSection('type-section')">See More</button>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/map_icon.png">
@@ -90,42 +82,125 @@
     <!----------------------Tours---->
 
     <section>
-        <div class='container'>
+        <div id="tour-section" class='container section'>
             <h2>Choose your tour:</h2>
             <input type='hidden' name='tour' value=false />
             <div class='container'>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='tour' value='gaudi' type='radio' class='form-check-input'>Gaudi Tour</button>
+                                <button name='type' value='gaudi' type='radio' class='form-check-input' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
                     </label>
                 </div>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='tour' value='gothic' type='radio' class='form-check-input'>Gothic Tour</button>
+                                <button name='type' value='gothic' type='radio' class='form-check-input' onClick="showTourInfo('gothic');">Gothic Tour</button>
                     </label>
                 </div>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='tour' value='culture' type='radio' class='form-check-input'>Culture</button>
+                                <button name='type' value='culture' type='radio' class='form-check-input' >Culture</button>
                     </label>
                 </div>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='tour' value='transport' type='radio' class='form-check-input'>Transport</button>
+                                <button name='type' value='transport' type='radio' class='form-check-input'>Transport</button>
                     </label>
                 </div>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='tour' value='thefuture' type='radio' class='form-check-input'>The Future</button>
+                                <button name='type' value='thefuture' type='radio' class='form-check-input'>The Future</button>
                     </label>
                 </div>
             </div>
-            <!--The Map-->
-            <div class='container'>
-                <div id='map'></div>
+
+            <div id="gaudi" class="tour-info text-center">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent.</p>
+                </div>
             </div>
+            <div id="gothic" class="tour-info text-center">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent.</p>
+                </div>
+            </div>
+            <div class="tour-info text-center">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent.</p>
+                </div>
+                <div class="row">
+                    <img src=""></img>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.</p>
+                    <img src=""></img>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+            </div>
+            <div class="tour-info text-center">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent.</p>
+                </div>
+                <div class="row">
+                    <img src=""></img>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.</p>
+                    <img src=""></img>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+            </div>
+            <div class="tour-info text-center">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent.</p>
+                </div>
+                <div class="row">
+                    <img src=""></img>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.</p>
+                    <img src=""></img>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <button>Book Now</button>
         </div>
     </section>
+    <section>
+        <div id="type-section" class='container section'>
+            <h2>Choose your tour:</h2>
+            <input type='hidden' name='tour' value=false />
+            <div class='container'>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='type' value='accomodation' type='radio' class='form-check-input'>Accomodation</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='type' value='restaurant' type='radio' class='form-check-input'>Restaurants</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='type' value='shop' type='radio' class='form-check-input'>Shops</button>
+                    </label>
+                </div>
+    </section>
+    <div class='container'>
+        <div id='map' class="map"></div>
+    </div>
 </body>
 
 <!---Jquery and Bootstrap JS ---->

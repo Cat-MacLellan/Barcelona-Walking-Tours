@@ -104,11 +104,18 @@ h2 {
 }
 /*---------------------map */
 
-#map {
+.map {
     height: 300px;
     border-radius: 5px;
 }
 
+.tour-info {
+    display: none;
+}
+
+#type-section {
+    display: none;
+}
 /*---------------------media queries */
 
 @media (min-width: 1200px) {
