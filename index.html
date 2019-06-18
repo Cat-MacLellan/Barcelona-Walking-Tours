@@ -61,24 +61,26 @@
                     <img class="mx-auto" src="assets/images/tour_icon.png">
                     <h2>Walking Tours</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <a><button type="button" class="btn btn-home" onClick="changeSection('tour-section')">See More</button>
+                    <a><button type="button" class="btn btn-home" onClick="changeSection('tour-section'); showMap();">See More</button>
                     </a>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/tree_icon.png">
                     <h2>Sustainable Archirecture</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <button type="button" class="btn btn-home" onClick="changeSection('type-section')">See More</button>
+                    <button type="button" class="btn btn-home" onClick="changeSection('type-section'); showMap();">See More</button>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/map_icon.png">
                     <h2>Visiting Barcelona?</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <button type="button" class="btn btn-home">See More</button>
+                    <button type="button" class="btn btn-home" onClick="changeSection('weather-section'); hideMap();">See More</button>
                 </div>
             </div>
         </div>
     </section>
+    </div>
+
     <!----------------------Tours---->
 
     <section>
@@ -197,10 +199,39 @@
                                 <button name='type' value='shop' type='radio' class='form-check-input'>Shops</button>
                     </label>
                 </div>
+            </div>
+        </div>
     </section>
+
     <div class='container'>
         <div id='map' class="map"></div>
     </div>
+
+    <section>
+        <div id="weather-section" class="col-lg-6 container section text-center">
+            <h4>Weather Search</h4>
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat.
+            </div>
+            <div class="weatherSearch row justify-content-center">
+                <input type="text" name="city" id="city" placeholder="City Name" />
+                <button id="submitWeather" class="btn btn-primary">Search City</button>
+            </div>
+            <span id="error"></span>
+            <div id="show"></div>
+            <div class="justify-content-center weatherSearch">
+                <h5 id="name"></h5>
+                <img src="assets/images/weather.png" alt="icon" id="icon" class="weatherIcon"></img>
+                <h5 id="desc"></h5>
+            </div>
+            <div class="row justify-content-center weatherSearch ">
+                 <h5 id="tempMin">Min&#176</h5>
+                <h5 id="tempMax" class="temp">Max&#176</h5>
+               
+            </div>
+        </div>
+    </section>
 </body>
 
 <!---Jquery and Bootstrap JS ---->
@@ -208,6 +239,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script type="text/javascript" src="assets/js/maps.js"></script>
+<script type="text/javascript" src="assets/js/weather.js"></script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
 

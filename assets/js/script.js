@@ -38,6 +38,17 @@ function showTourInfo(tourName) {
   });
 }
 
+
+function hideMap() {
+      $('#map').hide('slow') 
+      console.log('hide map');
+    }
+
+function showMap() {
+  $('#map').show('slow')
+  console.log('show map');
+}
+
 function changeSection(section) {
   $('.section').each(function(index) {
     if ($(this).attr("id") == section) {
@@ -47,4 +58,10 @@ function changeSection(section) {
       $(this).hide('slow')
     }
   });
+  console.log('changed section');
 }
+
+
+  
+  
+ 
