@@ -89,8 +89,8 @@ h2 {
     padding-bottom: 40px;
 }
 
-.tour-content {
-    padding-bottom: 30px;
+.tour-info {
+    padding: 30px 0px 20px 0px;
 }
 
 .tour-img {
@@ -98,16 +98,20 @@ h2 {
     width: 200px;
 }
 
-#modal-link {
-    cursor: pointer;
-    color: #FFBD59;
+#book {
+    padding: 10px 0px 10px 0px;
 }
+
 
 /*---------------------map */
 
-.map {
+#map {
     height: 300px;
     border-radius: 5px;
+}
+
+.map {
+    padding-bottom: 50px;
 }
 
 .tour-info {

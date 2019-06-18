@@ -29,6 +29,9 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#toura">Walking Tours</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#plan">Plan Your Trip</a>
                 </li>
                 <li class="nav-item">
@@ -78,103 +81,71 @@
             </div>
         </div>
     </section>
-
     <!----------------------Tours---->
-
     <section>
         <div id="tour-section" class='container section'>
-            <h2>Choose your tour:</h2>
+            <div>
+                <h2>Walking Tours</h2>
+                <p>Each tour includes a complimentary tapas style lunch. Any entrance or museum tickets are not included.</p>
+
+                <p>Select a tour to see the famous landmarks you will see on each tour:</p>
+            </div>
             <input type='hidden' name='tour' value=false />
-            <div class='container'>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
                                 <button name='type' value='gaudi' type='radio' class='form-check-input' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
                     </label>
-                </div>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
+            </div>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
                                 <button name='type' value='gothic' type='radio' class='form-check-input' onClick="showTourInfo('gothic');">Gothic Tour</button>
                     </label>
-                </div>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
-                                <button name='type' value='culture' type='radio' class='form-check-input' >Culture</button>
+            </div>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
+                                <button name='type' value='culture' type='radio' class='form-check-input' onClick="showTourInfo('culture');">Culture</button>
                     </label>
-                </div>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
-                                <button name='type' value='transport' type='radio' class='form-check-input'>Transport</button>
+            </div>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
+                                <button name='type' value='transport' type='radio' class='form-check-input' onClick="showTourInfo('transport');">Transport</button>
                     </label>
-                </div>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
-                                <button name='type' value='thefuture' type='radio' class='form-check-input'>The Future</button>
+            </div>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
+                                <button name='type' value='thefuture' type='radio' class='form-check-input' onClick="showTourInfo('future');">The Future</button>
                     </label>
-                </div>
             </div>
-
-            <div id="gaudi" class="tour-info text-center">
+            <div id="gaudi" class="tour-info">
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-                        blandit praesent.</p>
+                    <p>Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city.</p>
+                    <p>This walking tour will start at one of Gaudi's most famous works, La Sagrad Familia, and will end with an exploration of Gaudi's fascinating Parc Guell. Passing along the way other wonders such as his Casa Batllo and Casa Mila.</p>
                 </div>
             </div>
-            <div id="gothic" class="tour-info text-center">
+            <div id="gothic" class="tour-info">
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-                        blandit praesent.</p>
+                    <p>Starting at the Basilica De Santa Maria del Pi, this tour will take you on a journey through Barcelona's Gothic Quarter, host to some of the city's most historic buildings.</p>
                 </div>
             </div>
-            <div class="tour-info text-center">
+            <div id="culture" class="tour-info">
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-                        blandit praesent.</p>
+                    <p>Barcelona is a city rich in arts and music venues. During this tour, you will explore some of the city's oldest venues and how the city developed at the beginning of the 20th century.</p>
                 </div>
-                <div class="row">
-                    <img src=""></img>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.</p>
-                    <img src=""></img>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.</p>
-                </div>
-
             </div>
-            <div class="tour-info text-center">
+            <div id="transport" class="tour-info">
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-                        blandit praesent.</p>
+                    <p>Our urban tour explores how Barcelona transformed in the mordern era with the birth of of transport. The city is linked together with tram, underground and linked to the rest of the world with its trains stations and airport.</p>
                 </div>
-                <div class="row">
-                    <img src=""></img>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.</p>
-                    <img src=""></img>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.</p>
-                </div>
-
             </div>
-            <div class="tour-info text-center">
+            <div id="future" class="tour-info">
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-                        blandit praesent.</p>
-                </div>
-                <div class="row">
-                    <img src=""></img>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.</p>
-                    <img src=""></img>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.</p>
+                    <p>With the increasing concerns over climate change and the environment, cities worldwide are looking into sustainable architecture and environmentally friendly designs. On this tour, you will be guided around the city's most modern,
+                        sustainable building and reflect on the future of the city's skyline</p>
                 </div>
             </div>
-            <button>Book Now</button>
+            <div id="book">
+                <button class="btn btn-home">Book Now</button>
+            </div>
         </div>
     </section>
     <section>
@@ -201,8 +172,8 @@
         </div>
     </section>
 
-    <div class='container'>
-        <div id='map' class="map"></div>
+    <div class='container map'>
+        <div id='map'></div>
     </div>
 
     <section>

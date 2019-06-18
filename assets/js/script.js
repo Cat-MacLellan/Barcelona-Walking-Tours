@@ -30,10 +30,10 @@ $('a').click(function() {
 function showTourInfo(tourName) {
   $('.tour-info').each(function(index) {
     if ($(this).attr("id") == tourName) {
-      $(this).toggle(2000);
+      $(this).toggle('slow');
     }
     else {
-      $(this).hide(1000);
+      $(this).hide('slow');
     }
   });
 }
