@@ -177,28 +177,32 @@
     </div>
 
     <section>
-        <div id="weather-section" class="col-lg-6 container section text-center">
-            <h4>Weather Search</h4>
+        <div id="weather-section" class="col-lg-6 container section">
+            <h4>Check The Weather</h4>
             <div>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                ea commodo consequat.
+              <p> Worldwide, we throw away or lose enough umbrellas to build 25 eiffel towers! 
+               By checking the weater before you head out for the day, you can pick up your raincoat or 
+               pack your trusty umbrella to save being caught in the rain and forced to by a new one!</p>
+            
+            <p>Type in the name of any city in the world to check the weather!</p>
             </div>
-            <div class="weatherSearch row justify-content-center">
-                <input type="text" name="city" id="city" placeholder="City Name" />
-                <button id="submitWeather" class="btn btn-primary">Search City</button>
-            </div>
-            <span id="error"></span>
-            <div id="show"></div>
-            <div class="justify-content-center weatherSearch">
-                <h5 id="name"></h5>
-                <img src="assets/images/weather.png" alt="icon" id="icon" class="weatherIcon"></img>
-                <h5 id="desc"></h5>
-            </div>
-            <div class="row justify-content-center weatherSearch ">
-                <h5 id="tempMin">Min&#176</h5>
-                <h5 id="tempMax" class="temp">Max&#176</h5>
-
-            </div>
+               <div class="text-center">
+                <div class="weatherSearch row justify-content-center">
+                    <input type="text" name="city" id="city" placeholder="City Name" />
+                    <button id="submitWeather" class="btn btn-home">Check Weather</button>
+                </div>
+                <span id="error"></span>
+                <div id="show"></div>
+                <div class="weatherSearch">
+                    <h5 id="name"></h5>
+                    <img src="assets/images/weather.png" alt="icon" id="icon" class="weatherIcon"></img>
+                    <h5 id="desc"></h5>
+                </div>
+                <div class="row justify-content-center">
+                    <h5 id="tempMin">Min&#176</h5>
+                    <h5 id="tempMax" class="temp">Max&#176</h5>
+                </div>
+           </div>
         </div>
     </section>
 </body>
