@@ -98,6 +98,11 @@ h2 {
     width: 200px;
 }
 
+.content-image {
+    height: 80px;
+    width: 80px;
+}
+
 #book {
     padding: 10px 0px 10px 0px;
 }

@@ -5,52 +5,62 @@ let infoWindow;
 let locations = [{
         type: 'gaudi',
         latlng: { lat: 41.403706, lng: 2.173504 },
-        content: 'Sangrada'
+        content: 'La Sagrada Familia <img class="content-image" src="assets/images/familia.jpg"></img>'
     },
     {
         type: 'gaudi',
         latlng: { lat: 41.4145, lng: 2.1527 },
-        content: 'parc'
+        content: 'Parc Guell <img class="content-image" src="assets/images/parc_guell.jpg"></img>'
+    },
+    {
+        type: 'gaudi',
+        latlng: { lat: 41.391709, lng: 2.164764 },
+        content: 'Casa Batllo <img class="content-image" src="assets/images/gaudi.jpg"></img>'
+    },
+    {
+        type: 'gaudi',
+        latlng: { lat: 41.395485, lng: 2.161961 },
+        content: 'Casa Mila <img class="content-image" src="assets/images/casa_milla.jpg"></img>'
     },
     {
         type: 'gothic',
-        latlng: { lat: 41.3839, lng: 2.1821 },
-        content: 'basilica'
+        latlng: { lat: 41.3839, lng: 2.1821  },
+        content: 'Basilica De Santa Maria del Pi <img class="content-image" src="assets/images/santa_maria.jpg"></img>'
     },
     {
         type: 'gothic',
         latlng: { lat: 41.3840, lng: 2.1762 },
-        content: 'cathedral'
+        content: 'Cathedral Del Santa Eulaia <img class="content-image" src="assets/images/cathedral.png"></img>'
     },
     {
         type: 'culture',
         latlng: { lat: 41.3744, lng: 2.1696 },
-        content: 'musica'
+        content: 'Sala Apollo <img class="content-image" src="assets/images/apolo.jpg"></img>'
     },
     {
         type: 'culture',
         latlng: { lat: 41.3876, lng: 2.1753 },
-        content: 'apollo'
+        content: 'Palau De Le Musica Catalana <img class="content-image" src="assets/images/musica.jpg"></img>'
     },
     {
         type: 'transport',
         latlng: { lat: 41.3840, lng: 2.1865 },
-        content: 'station'
+        content: 'Barcelona Franca Railway Station <img class="content-image" src="assets/images/station.jpg"></img>'
     },
     {
         type: 'transport',
         latlng: { lat: 41.370556, lng: 2.170556 },
-        content: 'cable car'
+        content: 'Teleferic De Monjuice <img class="content-image" src="assets/images/cable_car.jpg"></img>'
     },
     {
         type: 'thefuture',
         latlng: { lat: 41.402472, lng: 2.194556 },
-        content: 'MTC'
+        content: 'Media TIC <img class="content-image" src="assets/images/mediatic.jpg"></img>'
     },
     {
         type: 'thefuture',
         latlng: { lat: 41.411492, lng: 2.228094 },
-        content: 'power station'
+        content: 'Photovolatic Power Station  <img class="content-image" src="assets/images/powerstation.jpg"></img>'
     },
     {
         type: 'accomodation',
@@ -124,10 +134,10 @@ let locations = [{
     },
     {
         type: 'shop',
-        latlng: { lat: 41.404339, lng: 2.156604},
+        latlng: { lat: 41.404339, lng: 2.156604 },
         content: 'Velvet BCN Moda Sostenible '
     },
-    
+
     {
         type: 'shop',
         latlng: { lat: 41.402659, lng: 2.158680 },
@@ -160,6 +170,7 @@ function initMap() {
         if (args.hasOwnProperty('icon')) mkr.setIcon(args.icon);
         if (args.hasOwnProperty('name')) mkr.name = args.name;
         if (args.hasOwnProperty('content')) mkr.content = args.content;
+        if (args.hasOwnProperty('image')) mkr.image = args.image;
 
         google.maps.event.addListener(mkr, 'click', clickhandler);
         return mkr;
@@ -167,6 +178,7 @@ function initMap() {
     const clickhandler = function(e) {
         infoWindow.open(map, this);
         infoWindow.setContent(this.content);
+        infoWindow.setImage(this.image);
     };
     const clearmarkers = function() {
         markers.forEach(mkr => {
