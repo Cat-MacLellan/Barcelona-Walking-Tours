@@ -54,66 +54,92 @@ let locations = [{
     },
     {
         type: 'accomodation',
-        latlng: { lat: 41.527473, lng: 2.310703 }, 
+        latlng: { lat: 41.527473, lng: 2.310703 },
         content: 'Mas Salagros'
     },
     {
         type: 'accomodation',
-        latlng: { lat: 41.391071, lng: 2.141721},  
+        latlng: { lat: 41.391071, lng: 2.141721 },
         content: 'Melia Barcelona Sarria'
     },
     {
         type: 'accomodation',
-        latlng: { lat: 41.422626, lng: 2.097249 }, 
+        latlng: { lat: 41.384852, lng: 2.168164 },
+        content: 'Hotel Eco Boutique Hostal Grau'
+    },
+    {
+        type: 'accomodation',
+        latlng: { lat: 41.383466, lng: 2.168485 },
+        content: 'Hotel Casa Camper'
+    },
+    {
+        type: 'accomodation',
+        latlng: { lat: 41.386251, lng: 2.168332 },
+        content: 'hotel pulitzer barcelona'
+    },
+    {
+        type: 'accomodation',
+        latlng: { lat: 41.422626, lng: 2.097249 },
         content: 'inout hostel barcelona'
     },
     {
         type: 'accomodation',
-        latlng: { lat: 41.398971, lng: 2.188528 }, 
+        latlng: { lat: 41.398971, lng: 2.188528 },
         content: 'Twentytu Hostel'
     },
     {
         type: 'restaurant',
-        latlng: { lat: 41.388846, lng: 2.158991 }, 
+        latlng: { lat: 41.388846, lng: 2.158991 },
         content: 'Summun Restaurant and Bar '
     },
     {
         type: 'restaurant',
-        latlng: { lat: 41.381925, lng: 2.183867 }, 
+        latlng: { lat: 41.381925, lng: 2.183867 },
         content: 'The Green Spot'
     },
     {
         type: 'restaurant',
-        latlng: { lat: 41.397291, lng: 2.167146 }, 
+        latlng: { lat: 41.397291, lng: 2.167146 },
         content: 'Hammock Juice Station'
     },
     {
         type: 'restaurant',
-        latlng: { lat: 41.403693, lng: 2.158258},  
-        content: 'Olokuti Gràcia' 
+        latlng: { lat: 41.403693, lng: 2.158258 },
+        content: 'Olokuti Gràcia'
     },
     {
         type: 'restaurant',
-        latlng: { lat: 41.402675, lng: 2.152816},  
-        content: 'Coshop' 
+        latlng: { lat: 41.402675, lng: 2.152816 },
+        content: 'Coshop'
     },
     {
         type: 'shop',
-        latlng: { lat: 41.403975, lng: 2.158258}, 
-        content: 'La Besneta' 
+        latlng: { lat: 41.403975, lng: 2.158258 },
+        content: 'La Besneta'
     },
     {
         type: 'shop',
-        latlng: { lat: 41.402659, lng: 2.158680}, 
-        content: 'Sunsais' 
+        latlng: { lat: 41.403823, lng: 2.156854 },
+        content: 'Gallina de Piel'
     },
     {
         type: 'shop',
-        latlng: { lat: 41.401962, lng: 2.157294},  
-        content: 'GreenLifeStyle EcoFashion - Tienda de Ropa Ecológica' 
+        latlng: { lat: 41.404339, lng: 2.156604},
+        content: 'Velvet BCN Moda Sostenible '
+    },
+    
+    {
+        type: 'shop',
+        latlng: { lat: 41.402659, lng: 2.158680 },
+        content: 'Sunsais'
+    },
+    {
+        type: 'shop',
+        latlng: { lat: 41.401962, lng: 2.157294 },
+        content: 'GreenLifeStyle EcoFashion - Tienda de Ropa Ecológica'
     }
-    
-    
+
+
 ];
 
 

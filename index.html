@@ -29,13 +29,13 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#toura">Walking Tours</a>
+                    <a class="nav-link" href="#tours" onClick="changeSection('tour-section'); showMap();">Walking Tours</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#plan">Plan Your Trip</a>
+                    <a class="nav-link" href="#plan" onClick="changeSection('plan-section'); showMap();">Plan Your Trip</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#weather">Check The Weather</a>
+                    <a class="nav-link" href="#weather" onClick="changeSection('weather-section'); hideMap();">Check The Weather</a>
                 </li>
             </ul>
         </div>
@@ -63,32 +63,31 @@
                     <img class="mx-auto" src="assets/images/tour_icon.png">
                     <h2>Walking Tours</h2>
                     <p>Our expert led walking tours are a great way to explore Barcelona and they're free! Click explore to see the different tours we have on offer.</p>
-                    <a><button type="button" class="btn btn-home" onClick="changeSection('tour-section'); showMap();">Explore</button>
+                    <a href="#tours"><button type="button" class="btn btn-home"  onClick="changeSection('tour-section'); showMap();">Explore</button>
                     </a>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/map_icon.png">
                     <h2>Visiting Barcelona?</h2>
-                    <p>Reduce the impact of your stay by supporting environmentally friendly accomodation, restaurants, shops and more.</p>
-                    <button type="button" class="btn btn-home" onClick="changeSection('type-section'); showMap();">Explore</button>
+                    <p>Reduce the impact of your stay by supporting environmentally friendly accomodation, restaurants and shops.</p>
+                    <a href="#plan"><button type="button" class="btn btn-home" onClick="changeSection('plan-section'); showMap();">Explore</button></a>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/weather_icon.png">
                     <h2>Check The Weather</h2>
                     <p>Did you know that you can help the environment by checking the weather before heading out for the day? Find the current weather for any city here.</p>
-                    <button type="button" class="btn btn-home" onClick="changeSection('weather-section'); hideMap();">Explore</button>
+                    <a href="#weather"><button type="button" class="btn btn-home" onClick="changeSection('weather-section'); hideMap();">Explore</button></a>
                 </div>
             </div>
         </div>
     </section>
     <!----------------------Tours---->
-    <section>
+    <section id="tours">
         <div id="tour-section" class='container section'>
             <div>
                 <h2>Walking Tours</h2>
-                <p>Each tour includes a complimentary tapas style lunch. Any entrance or museum tickets are not included.</p>
-
-                <p>Select a tour to see the famous landmarks you will see on each tour:</p>
+                <p>Select a tour to see the famous landmarks featured on each one.</p>
+                <p>Each tour includes a complimentary tapas style lunch.</p>
             </div>
             <input type='hidden' name='tour' value=false />
             <div class='form-check-inline'>
@@ -148,45 +147,47 @@
             </div>
         </div>
     </section>
-    <section>
-        <div id="type-section" class='container section'>
-            <h2>Choose your tour:</h2>
+    <section id="plan">
+        <div id="plan-section" class='container section'>
+            <h2>Plan Your Visit</h2>
+            <p>Barcelona is rich in sustainable, eco-friendly buisnesses.</p>
+
+            <p>Plan your trip by finding eco-friendly accomodation, restaurants and cafes.</p>
             <input type='hidden' name='tour' value=false />
-            <div class='container'>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
+
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
                                 <button name='type' value='accomodation' type='radio' class='form-check-input'>Accomodation</button>
                     </label>
-                </div>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
+            </div>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
                                 <button name='type' value='restaurant' type='radio' class='form-check-input'>Restaurants</button>
                     </label>
-                </div>
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
+            </div>
+            <div class='form-check-inline'>
+                <label class='form-check-label'>
                                 <button name='type' value='shop' type='radio' class='form-check-input'>Shops</button>
                     </label>
-                </div>
             </div>
         </div>
+
     </section>
 
     <div class='container map'>
         <div id='map'></div>
     </div>
 
-    <section>
+    <section id="weather">
         <div id="weather-section" class="col-lg-6 container section">
             <h4>Check The Weather</h4>
             <div>
-              <p> Worldwide, we throw away or lose enough umbrellas to build 25 eiffel towers! 
-               By checking the weater before you head out for the day, you can pick up your raincoat or 
-               pack your trusty umbrella to save being caught in the rain and forced to by a new one!</p>
-            
-            <p>Type in the name of any city in the world to check the weather!</p>
+                <p> Worldwide, we throw away or lose enough umbrellas to build 25 eiffel towers! By checking the weater before you head out for the day, you can pick up your raincoat or pack your trusty umbrella to save being caught in the rain and forced
+                    to by a new one!</p>
+
+                <p>Type in the name of any city in the world to check the weather!</p>
             </div>
-               <div class="text-center">
+            <div class="text-center">
                 <div class="weatherSearch row justify-content-center">
                     <input type="text" name="city" id="city" placeholder="City Name" />
                     <button id="submitWeather" class="btn btn-home">Check Weather</button>
@@ -202,7 +203,7 @@
                     <h5 id="tempMin">Min&#176</h5>
                     <h5 id="tempMax" class="temp">Max&#176</h5>
                 </div>
-           </div>
+            </div>
         </div>
     </section>
 </body>
