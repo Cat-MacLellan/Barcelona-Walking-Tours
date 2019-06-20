@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="assets/js/jquery.datetimepicker.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 </head>
 
 <body id="page-top">
@@ -143,7 +147,66 @@
                 </div>
             </div>
             <div id="book">
-                <button class="btn btn-home">Book Now</button>
+                <button class="btn btn-home" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Book A Tour</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+
+                            <div class="modal-form">
+                                <select class="form-control" id="exampleFormControlSelect1" required>
+                                     <option value="">Seclect Tour</option>
+                                     <option value="Gaudi">Gaudi</option>
+                                     <option value="Gothic">Gothic</option>
+                                     <option value="Cultire">Culture</option>
+                                     <option value="Transport">Transport</option>
+                                     <option value="Future">The Future</option>
+                                </select>
+                            </div>
+                            <div class="modal-form">
+                                <select class="form-control" id="exampleFormControlSelect1" required>
+                                     <option value="">No. Of People</option>
+                                     <option value="3">3</option>
+                                     <option value="4">4</option>
+                                     <option value="5">5</option>
+                                     <option value="6">6</option>
+                                     <option value="7">7</option>
+                                     <option value="8">8</option>
+                                     <option value="9">9</option>
+                                     <option value="10+">10+</option>
+                                </select>
+                            </div>
+                            <div class="modal-form">
+                                <input class="form-control" type="text" id="datepicker" placeholder="Select A Date" required/>
+                            </div>
+                            <div class="modal-form">
+                                <input class="form-control" type="text" name="" placeholder="Frist Name" required/>
+                            </div>
+                            <div class="modal-form">
+                                <input class="form-control" type="text" name="" placeholder="Last Name" required/>
+                            </div>
+                            <div class="modal-form">
+                                <input class="form-control" type="email" name="" placeholder="Email Address" required/>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="submit" class="btn btn-home">Send Enquiry</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -209,13 +272,24 @@
 </body>
 
 <!---Jquery and Bootstrap JS ---->
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script type="text/javascript" src="assets/js/maps.js"></script>
 <script type="text/javascript" src="assets/js/weather.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 
 
 </html>

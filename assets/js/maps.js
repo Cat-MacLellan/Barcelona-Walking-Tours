@@ -170,7 +170,7 @@ function initMap() {
         if (args.hasOwnProperty('icon')) mkr.setIcon(args.icon);
         if (args.hasOwnProperty('name')) mkr.name = args.name;
         if (args.hasOwnProperty('content')) mkr.content = args.content;
-        if (args.hasOwnProperty('image')) mkr.image = args.image;
+    
 
         google.maps.event.addListener(mkr, 'click', clickhandler);
         return mkr;
@@ -178,7 +178,7 @@ function initMap() {
     const clickhandler = function(e) {
         infoWindow.open(map, this);
         infoWindow.setContent(this.content);
-        infoWindow.setImage(this.image);
+       
     };
     const clearmarkers = function() {
         markers.forEach(mkr => {

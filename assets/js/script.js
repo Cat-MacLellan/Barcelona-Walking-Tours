@@ -40,9 +40,9 @@ function showTourInfo(tourName) {
 
 
 function hideMap() {
-      $('#map').hide('slow') 
-      console.log('hide map');
-    }
+  $('#map').hide('slow')
+  console.log('hide map');
+}
 
 function showMap() {
   $('#map').show('slow')
@@ -61,7 +61,6 @@ function changeSection(section) {
   console.log('changed section');
 }
 
-
-  
-  
- 
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
