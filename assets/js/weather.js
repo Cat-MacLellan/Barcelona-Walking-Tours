@@ -2,10 +2,9 @@ $(document).ready(function() {
 
   $('#submitWeather').click(function() {
 
-    var city = $('#city').val();
-
+    var city = $('#city').val(),
+      message;
     if (city != '') {
-
       $.ajax({
 
         url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=6b3de6eb0de111a5fd9f861d0cc8067f",
@@ -14,14 +13,23 @@ $(document).ready(function() {
         success: function(data) {
           var weather = show(data);
           console.log(data);
+          message.innerHTML = "";
           $('#show').html(weather);
 
           $('#city').val('');
         }
       });
     }
-    else {
-      $("#error").html("That city doesn't exist!");
+    try {
+      message = document.getElementById("error");
+      if (city == "") throw "City Name";
+      if (city !== "city") throw "City Name";
+    }
+    catch (err) {
+      message.innerHTML = "Enter A " + err;
+    }
+    finally {
+      document.getElementById("city").value = "";
     }
   });
 });
