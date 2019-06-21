@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="assets/js/jquery.datetimepicker.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -91,63 +90,68 @@
             <div>
                 <h2>Walking Tours</h2>
                 <p>Select a tour to see the famous landmarks featured on each one.</p>
-                <p>Each tour includes a complimentary tapas style lunch.</p>
             </div>
+
             <input type='hidden' name='tour' value=false />
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='gaudi' type='radio' class='form-check-input' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
+            <div class="row justify-content-center">
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                           <button name='type' value='gaudi' type='radio' class='form-check-input btn btn-two' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
                     </label>
-            </div>
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='gothic' type='radio' class='form-check-input' onClick="showTourInfo('gothic');">Gothic Tour</button>
+                    <label class='form-check-label'>
+                                <button name='type' value='gothic' type='radio' class='form-check-input btn btn-three' onClick="showTourInfo('gothic');">Gothic Tour</button>
                     </label>
-            </div>
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='culture' type='radio' class='form-check-input' onClick="showTourInfo('culture');">Culture</button>
+
+
+                    <label class='form-check-label'>
+                                <button name='type' value='culture' type='radio' class='form-check-input btn btn-four' onClick="showTourInfo('culture');">Art & Culture</button>
                     </label>
-            </div>
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='transport' type='radio' class='form-check-input' onClick="showTourInfo('transport');">Transport</button>
+
+
+                    <label class='form-check-label'>
+                                <button name='type' value='transport' type='radio' class='form-check-input btn btn-five' onClick="showTourInfo('transport');">Urban Transport</button>
                     </label>
-            </div>
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='thefuture' type='radio' class='form-check-input' onClick="showTourInfo('future');">The Future</button>
+
+
+                    <label class='form-check-label'>
+                                <button name='type' value='thefuture' type='radio' class='form-check-input btn btn-six' onClick="showTourInfo('future');">The Future</button>
                     </label>
-            </div>
-            <div id="gaudi" class="tour-info">
-                <div>
-                    <p>Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city.</p>
-                    <p>This walking tour will start at one of Gaudi's most famous works, La Sagrada Familia, and will end with an exploration of Gaudi's fascinating Parc Guell. Passing along the way other wonders such as his Casa Batllo and Casa Mila.</p>
                 </div>
             </div>
-            <div id="gothic" class="tour-info">
-                <div>
-                    <p>Starting at the Basilica De Santa Maria del Pi, this tour will take you on a journey through Barcelona's Gothic Quarter, host to some of the city's most historic buildings.</p>
+
+
+            <div class="">
+                <div id="gaudi" class="tour-info">
+                    <div>
+                        <p>Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city.</p>
+                        <p>This walking tour will start at one of Gaudi's most famous works, La Sagrada Familia, and will end with an exploration of Gaudi's fascinating Parc Guell. Passing along the way other wonders such as his Casa Batllo and Casa Mila.</p>
+                    </div>
                 </div>
-            </div>
-            <div id="culture" class="tour-info">
-                <div>
-                    <p>Barcelona is a city rich in arts and music venues. During this tour, you will explore some of the city's oldest venues and how the city developed at the beginning of the 20th century.</p>
+                <div id="gothic" class="tour-info">
+                    <div>
+                        <p>Starting at the Basilica De Santa Maria del Pi, this tour will take you on a journey through Barcelona's Gothic Quarter, host to some of the city's most historic buildings.</p>
+                    </div>
                 </div>
-            </div>
-            <div id="transport" class="tour-info">
-                <div>
-                    <p>Our urban tour explores how Barcelona transformed in the mordern era with the birth of of transport. The city is linked together with tram, underground and linked to the rest of the world with its trains stations and airport.</p>
+                <div id="culture" class="tour-info">
+                    <div>
+                        <p>Barcelona is a city rich in arts and music venues. During this tour, you will explore some of the city's oldest venues and how the city developed at the beginning of the 20th century.</p>
+                    </div>
                 </div>
-            </div>
-            <div id="future" class="tour-info">
-                <div>
-                    <p>With the increasing concerns over climate change and the environment, cities worldwide are looking into sustainable architecture and environmentally friendly designs. On this tour, you will be guided around the city's most modern,
-                        sustainable building and reflect on the future of the city's skyline</p>
+                <div id="transport" class="tour-info">
+                    <div>
+                        <p>Our urban tour explores how Barcelona transformed in the mordern era with the birth of of transport. The city is linked together with tram, underground and linked to the rest of the world with its trains stations and airport.</p>
+                    </div>
+                </div>
+                <div id="future" class="tour-info">
+                    <div>
+                        <p>With the increasing concerns over climate change and the environment, cities worldwide are looking into sustainable architecture and environmentally friendly designs. On this tour, you will be guided around the city's most modern,
+                            sustainable building and reflect on the future of the city's skyline</p>
+                    </div>
                 </div>
             </div>
             <div id="book">
                 <button class="btn btn-home" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                <div id="demo" class="text-center"></div>
             </div>
         </div>
 
@@ -166,7 +170,7 @@
                         <div class="modal-body">
 
                             <div class="modal-form">
-                                <select class="form-control" id="exampleFormControlSelect1" required>
+                                <select class="form-control" id="tourName" name="tourName" required>
                                      <option value="">Seclect Tour</option>
                                      <option value="Gaudi">Gaudi</option>
                                      <option value="Gothic">Gothic</option>
@@ -176,7 +180,7 @@
                                 </select>
                             </div>
                             <div class="modal-form">
-                                <select class="form-control" id="exampleFormControlSelect1" required>
+                                <select class="form-control" id="number" name="number" required>
                                      <option value="">No. Of People</option>
                                      <option value="3">3</option>
                                      <option value="4">4</option>
@@ -189,22 +193,23 @@
                                 </select>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" type="text" id="datepicker" placeholder="Select A Date" required/>
+                                <input class="form-control" type="text" name="date" id="datepicker" placeholder="Select A Date" required/>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" type="text" name="" placeholder="Frist Name" required/>
+                                <input class="form-control" type="text" name="firstName" id="firstName" placeholder="Frist Name" required/>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" type="text" name="" placeholder="Last Name" required/>
+                                <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" type="email" name="" placeholder="Email Address" required/>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" required/>
                             </div>
 
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="submit" class="btn btn-home">Send Enquiry</button>
+                            <button class="btn btn-home" onClick="onSubmit();">Send Enquiry</button>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -215,23 +220,25 @@
             <h2>Plan Your Visit</h2>
             <p>Barcelona is rich in sustainable, eco-friendly buisnesses.</p>
 
-            <p>Plan your trip by finding eco-friendly accomodation, restaurants and cafes.</p>
+            <p>Plan your trip by finding eco-friendly accomodation, restaurants and shops.</p>
             <input type='hidden' name='tour' value=false />
+            <div class="row justify-content-center">
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='type' value='accomodation' type='radio' class='form-check-input btn btn-two'>Accomodation</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='type' value='shop' type='radio' class='form-check-input btn btn-three'>Shops</button>
+                    </label>
+                </div>
+                <div class='form-check-inline'>
+                    <label class='form-check-label'>
+                                <button name='type' value='restaurant' type='radio' class='form-check-input btn btn-six'>Restaurants</button>
+                    </label>
+                </div>
 
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='accomodation' type='radio' class='form-check-input'>Accomodation</button>
-                    </label>
-            </div>
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='restaurant' type='radio' class='form-check-input'>Restaurants</button>
-                    </label>
-            </div>
-            <div class='form-check-inline'>
-                <label class='form-check-label'>
-                                <button name='type' value='shop' type='radio' class='form-check-input'>Shops</button>
-                    </label>
             </div>
         </div>
 
@@ -278,6 +285,8 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script type="text/javascript" src="assets/js/maps.js"></script>
@@ -286,8 +295,7 @@
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 
 

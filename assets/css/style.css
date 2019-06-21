@@ -114,7 +114,7 @@ h2 {
     height: 300px;
     border-radius: 5px;
 }
- 
+
 .map {
     padding-bottom: 50px;
 }
@@ -125,11 +125,12 @@ h2 {
 
 #plan-section {
     display: none;
+    padding-bottom: 30px;
 }
 
 #weather-section {
     display: none;
-
+    padding-bottom: 30px;
 }
 
 .weatherSearch {
@@ -137,8 +138,8 @@ h2 {
 }
 
 .weatherIcon {
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
 }
 
 .temp {
@@ -149,6 +150,83 @@ h2 {
 .modal-form {
     padding: 10px 10px 0px 10px;
 }
+
+.form-check-label {
+    padding-left: 20px;
+}
+
+
+.btn-two {
+    color: #000000;
+    font-weight: 500;
+    background-color: #C3DBE5;
+    border-color: transparent;
+
+}
+
+.btn-two:hover {
+    color: #000000;
+    background-color: #9BC3D3;
+}
+
+
+.btn-three {
+    color: #000000;
+    font-weight: 500;
+    background-color: #CBF4D7;
+    border-color: transparent;
+
+}
+
+.btn-three:hover {
+    color: #000000;
+    background-color: #BAE0C5;
+}
+
+
+.btn-four {
+    color: #000000;
+    font-weight: 500;
+    background-color: #F4FFC3;
+    border-color: transparent;
+
+}
+
+.btn-four:hover {
+    color: #000000;
+    background-color: #EDFCA9;
+}
+
+.btn-five {
+    color: #000000;
+    font-weight: 500;
+    background-color: #E8C2DF;
+    border-color: transparent;
+
+}
+
+.btn-five:hover {
+    color: #000000;
+    background-color: #D3B1CB;
+}
+
+.btn-six {
+    color: #000000;
+    font-weight: 500;
+    background-color: #FFB1C6;
+    border-color: transparent;
+
+}
+
+.btn-six:hover {
+    color: #000000;
+    background-color: #FF92AF;
+}
+
+
+
+
+
 /*---------------------media queries */
 
 @media (min-width: 1200px) {

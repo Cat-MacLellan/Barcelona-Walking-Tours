@@ -61,6 +61,14 @@ function changeSection(section) {
   console.log('changed section');
 }
 
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+$(function() {
+  $("#datepicker").datepicker();
+});
+
+
+
+
+function onSubmit() {
+  var text = "Your booking enquiry has been sent!";
+  document.getElementById("demo").innerHTML = text;
+}
