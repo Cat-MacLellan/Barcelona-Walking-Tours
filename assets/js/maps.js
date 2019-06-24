@@ -1,7 +1,7 @@
 let map;
 let markers = [];
 let infoWindow;
-
+// Location data.
 let locations = [{
         icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png",
         type: 'gaudi',
@@ -177,52 +177,43 @@ let locations = [{
         latlng: { lat: 41.401962, lng: 2.157294 },
         content: 'GreenLifeStyle EcoFashion - Tienda de Ropa Ecológica'
     }
-
-
 ];
-
-
+// Initialising Google map.
 function initMap() {
     let options = {
         center: new google.maps.LatLng(41.3851, 2.1734),
-        zoom: 12
+        zoom: 10
     };
     map = new google.maps.Map(document.getElementById('map'), options);
     infoWindow = new google.maps.InfoWindow();
-
+    // Creates markers with relevant data.
     const addmarker = function(args) {
         let mkr = new google.maps.Marker({
             position: args.latlng,
             map: map
-
         });
         if (args.hasOwnProperty('icon')) mkr.setIcon(args.icon);
         if (args.hasOwnProperty('name')) mkr.name = args.name;
         if (args.hasOwnProperty('content')) mkr.content = args.content;
-
-
         google.maps.event.addListener(mkr, 'click', clickhandler);
         return mkr;
     };
     const clickhandler = function(e) {
         infoWindow.open(map, this);
         infoWindow.setContent(this.content);
-
     };
     const clearmarkers = function() {
         markers.forEach(mkr => {
             mkr.setMap(null);
         });
     };
-
+    // Adds the markers when a button is clicked.
     Array.prototype.slice.call(document.querySelectorAll('button[type="radio"][name="type"]')).forEach(function(input) {
         input.addEventListener('click', function(e) {
             if (this.value) {
-
-                /* clear any markers added to the map already */
+                // clear any markers added to the map already 
                 clearmarkers();
-
-                /* only show those that qualify based upon selected type */
+                // Only show those that qualify based upon selected type 
                 locations.forEach(obj => {
                     if (obj.type == this.value) markers.push(addmarker.call(this, obj));
                 });

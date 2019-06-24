@@ -1,12 +1,10 @@
 $(document).ready(function() {
-
+  // Fetches weather data of inputted city.
   $('#submitWeather').click(function() {
-
     var city = $('#city').val(),
       message;
     if (city != '') {
       $.ajax({
-
         url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=6b3de6eb0de111a5fd9f861d0cc8067f",
         type: "GET",
         dataType: "jsonp",
@@ -15,11 +13,11 @@ $(document).ready(function() {
           console.log(data);
           message.innerHTML = "";
           $('#show').html(weather);
-
           $('#city').val('');
         }
       });
     }
+    // Displays error message if input is black or city is non-existent.
     try {
       message = document.getElementById("error");
       if (city == "") throw "City Name";
@@ -33,11 +31,11 @@ $(document).ready(function() {
     }
   });
 });
-
+// Changes the first letter of city name to upper case.
 String.prototype.capitalize = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
 };
-
+// Displays the data. 
 function show(data) {
   var name = data.name;
   var tempMin = Math.round(data.main.temp_min);
@@ -51,5 +49,4 @@ function show(data) {
   $('#tempMax').html(tempMax + '&#176');
   $('#desc').html(desc);
   $('#icon').attr('src', iconURL);
-
 }

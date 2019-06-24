@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Barcelona's Archirecture</title>
-
-    <!---Bootstrap and Style Sheets--->
-
+    <title>Barcelona Walking Tours</title>
+    <!---Bootstrap and Style Sheets-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
+    <!---JQuery Styling for Date Picker-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
 </head>
 
 <body id="page-top">
-    <!---navbar and logo --->
+    <!---navbar and logo-->
     <nav class="navbar navbar-light sticky-top navbar-expand-lg">
         <a class="navbar-brand" href="#page-top">
-          <img id="logo" src="assets/images/logo2.png">
+          <img id="logo" src="assets/images/logo2.png" alt="logo"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -43,78 +39,74 @@
             </ul>
         </div>
     </nav>
-    <!----------------------header---->
+    <!---header-->
     <header class="masthead">
         <div class="container-fluid h-100 darken">
             <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
+                <div class="col-lg-12 text-center">
                     <h1 class="font-weight-bold">Barcelona Walking Tours</h1>
-                    <h5 class="col-md-6 offset-md-3">Taking small steps to help the environment can make a big difference. Tourism has a massive inpact on a city and its carbon footprint. By chosing to explore a city on foot, you are taking the first of many steps to help reduce your
-                        impact and to help the environment.</h5>
-                    <a href="#home"> 
-                   <button type="button" class="btn">Explore</button>
+                    <h3 class="col-md-6 offset-md-3">Taking small steps to help the environment can make a big difference. Tourism has a massive inpact on a city and its carbon footprint. By chosing to explore a city on foot, you are taking the first of many steps to help reduce your
+                        impact and to help the environment.</h3>
+                    <a href="#home">     
+                <button type="button" class="btn shadow-none">Explore</button>
                    </a>
                 </div>
             </div>
         </div>
     </header>
-    <!----------------------home---->
+    <!---home-->
     <section id="home">
         <div class="container-fluid home">
             <div class="row text-center">
                 <div class="col-xs-2 col-md-4">
-                    <img class="mx-auto" src="assets/images/tour_icon.png">
+                    <img class="mx-auto" src="assets/images/tour_icon.png" alt="tour_icon">
                     <h2>Walking Tours</h2>
                     <p>Our expert led walking tours are a great way to explore Barcelona and they're free! Click explore to see the different tours we have on offer.</p>
-                    <a href="#tours"><button type="button" class="btn btn-home"  onClick="changeSection('tour-section'); showMap();">Explore</button>
+                    <a href="#tours"><button type="button" class="btn btn-one shadow-none"  onClick="changeSection('tour-section'); showMap();">Explore</button>
                     </a>
                 </div>
                 <div class="col-xs-2 col-md-4">
-                    <img class="mx-auto" src="assets/images/map_icon.png">
+                    <img class="mx-auto" src="assets/images/map_icon.png" alt="map_icon">
                     <h2>Visiting Barcelona?</h2>
                     <p>Reduce the impact of your stay by supporting environmentally friendly accomodation, restaurants and shops.</p>
-                    <a href="#plan"><button type="button" class="btn btn-home" onClick="changeSection('plan-section'); showMap();">Explore</button></a>
+                    <a href="#plan"><button type="button" class="btn btn-one shadow-none" onClick="changeSection('plan-section'); showMap();">Explore</button></a>
                 </div>
                 <div class="col-xs-2 col-md-4">
-                    <img class="mx-auto" src="assets/images/weather_icon.png">
+                    <img class="mx-auto" src="assets/images/weather_icon.png" alt="weather_icon">
                     <h2>Check The Weather</h2>
                     <p>Did you know that you can help the environment by checking the weather before heading out for the day? Find the current weather for any city here.</p>
-                    <a href="#weather"><button type="button" class="btn btn-home" onClick="changeSection('weather-section'); hideMap();">Explore</button></a>
+                    <a href="#weather"><button type="button" class="btn btn-one shadow-none" onClick="changeSection('weather-section'); hideMap();">Explore</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <!----------------------Tours---->
+    <!---Tour Section-->
     <section id="tours">
         <div id="tour-section" class='container section'>
             <div>
                 <h2>Walking Tours</h2>
                 <p>Select a tour to see the famous landmarks featured on each one.</p>
             </div>
-
             <input type='hidden' name='tour' value=false />
-            <div class="row justify-content-center">
-                <div class='form-check-inline'>
-                    <label class='form-check-label'>
-                           <button name='type' value='gaudi' type='radio' class='form-check-input btn btn-two' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
+            <div class="row justify-content-center text-center">
+                <div class='form-check-inline col-xs-12'>
+                    <label class='col-xs-4 form-check-label'>
+                           <button name='type' value='gaudi' type='radio' class='form-check-input btn btn-two shadow-none' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
                     </label>
-                    <label class='form-check-label'>
-                                <button name='type' value='gothic' type='radio' class='form-check-input btn btn-three' onClick="showTourInfo('gothic');">Gothic Tour</button>
+                    <label class='col-xs-4 form-check-label'>
+                                <button name='type' value='gothic' type='radio' class='form-check-input btn btn-three shadow-none' onClick="showTourInfo('gothic');">Gothic Tour</button>
                     </label>
-                    <label class='form-check-label'>
-                                <button name='type' value='culture' type='radio' class='form-check-input btn btn-four' onClick="showTourInfo('culture');">Art & Culture</button>
+                    <label class='col-xs-4 form-check-label'>
+                                <button name='type' value='culture' type='radio' class='form-check-input btn btn-four shadow-none' onClick="showTourInfo('culture');">Art & Culture</button>
                     </label>
-                    <label class='form-check-label'>
-                                <button name='type' value='transport' type='radio' class='form-check-input btn btn-five' onClick="showTourInfo('transport');">Urban Transport</button>
+                    <label class='col-xs-4 form-check-label'>
+                                <button name='type' value='transport' type='radio' class='form-check-input btn btn-five shadow-none' onClick="showTourInfo('transport');">Urban Transport</button>
                     </label>
-                    <label class='form-check-label'>
-                                <button name='type' value='thefuture' type='radio' class='form-check-input btn btn-six' onClick="showTourInfo('future');">The Future</button>
+                    <label class='col-xs-4 form-check-label'>
+                                <button name='type' value='thefuture' type='radio' class='form-check-input btn btn-six shadow-none' onClick="showTourInfo('future');">The Future</button>
                     </label>
                 </div>
             </div>
-
-
-
             <div id="gaudi" class="tour-info">
                 <div>
                     <p>Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city.</p>
@@ -141,28 +133,22 @@
                     <p>With the increasing concerns over climate change and the environment, cities worldwide are looking into sustainable architecture and environmentally friendly designs. On this tour, you will be guided around the city's most modern,
                         sustainable building and reflect on the future of the city's skyline</p>
                 </div>
-
             </div>
-            <div id="book">
-                <button class="btn btn-home" data-toggle="modal" data-target="#bookingModal">Book Now</button>
-                <div id="demo" class="text-center"></div>
-            </div>
+            <!---Booking Enquiry Validation-->
+            <div class="enquiry text-center"></div>
         </div>
-
-
-        <!-- Modal -->
+        <!--Booking Modal -->
         <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Book A Tour</h5>
+                        <h3 class="modal-title">Book A Tour</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                                 <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
                     <form>
                         <div class="modal-body">
-
                             <div class="modal-form">
                                 <select class="form-control" id="tourName" name="tourName" required>
                                      <option value="">Seclect Tour</option>
@@ -187,7 +173,7 @@
                                 </select>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" type="text" name="date" id="datepicker" placeholder="Select A Date" required/>
+                                <input class="form-control" name="date" id="datepicker" placeholder="Select A Date" required/>
                             </div>
                             <div class="modal-form">
                                 <input class="form-control" type="text" name="firstName" id="firstName" placeholder="Frist Name" required/>
@@ -198,100 +184,95 @@
                             <div class="modal-form">
                                 <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" required/>
                             </div>
-
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button class="btn btn-home" onClick="onSubmit();">Send Enquiry</button>
+                            <button class="btn btn-one shadow-none" onClick="onSubmit();">Send Enquiry</button>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <!---Tour Section-->
     <section id="plan">
         <div id="plan-section" class='container section'>
             <h2>Plan Your Visit</h2>
             <p>Barcelona is rich in sustainable, eco-friendly buisnesses.</p>
-
             <p>Plan your trip by finding eco-friendly accomodation, restaurants and shops.</p>
             <input type='hidden' name='tour' value=false />
             <div class="row justify-content-center">
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='type' value='accomodation' type='radio' class='form-check-input btn btn-two'>Accomodation</button>
+                                <button name='type' value='accomodation' type='radio' class='form-check-input btn btn-two shadow-none'>Accomodation</button>
                     </label>
                 </div>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='type' value='shop' type='radio' class='form-check-input btn btn-three'>Shops</button>
+                                <button name='type' value='shop' type='radio' class='form-check-input btn btn-three shadow-none'>Shops</button>
                     </label>
                 </div>
                 <div class='form-check-inline'>
                     <label class='form-check-label'>
-                                <button name='type' value='restaurant' type='radio' class='form-check-input btn btn-six'>Restaurants</button>
+                                <button name='type' value='restaurant' type='radio' class='form-check-input btn btn-six shadow-none'>Restaurants</button>
                     </label>
                 </div>
-
+                <!---Booking Enquiry Validation-->
+                <div class="enquiry text-center"></div>
             </div>
         </div>
-
     </section>
-
+    <!---Google Map-->
     <div class='container map'>
         <div id='map'></div>
+        <div id="book" class="text-center">
+            <button class="btn btn-one shadow-none" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+        </div>
     </div>
-
+    <!---Find Weather Section-->
     <section id="weather">
         <div id="weather-section" class="col-lg-6 container section">
-            <h4>Check The Weather</h4>
+            <h2>Check The Weather</h2>
             <div>
-                <p> Worldwide, we throw away or lose enough umbrellas to build 25 eiffel towers! By checking the weater before you head out for the day, you can pick up your raincoat or pack your trusty umbrella to save being caught in the rain and forced
-                    to by a new one!</p>
+                <p> Worldwide, we throw away or lose enough umbrellas to build 25 eiffel towers! By checking the weather before you head out for the day, you can pick up your raincoat or pack your trusty umbrella to save being caught in the rain and forced
+                    to by a new one.</p>
 
                 <p>Type in the name of any city in the world to check the weather!</p>
             </div>
             <div class="text-center">
-                <div class="weatherSearch row justify-content-center">
-                    <input type="text" name="city" id="city" placeholder="City Name" />
-                    <button id="submitWeather" class="btn btn-home">Check Weather</button>
+                <div class="weatherSearch form-inline justify-content-center">
+                    <div class="mx-sm-3 mb-2">
+                        <input class="form-control" type="text" name="city" id="city" placeholder="City Name" />
+                        <button id="submitWeather" class="btn btn-one shadow-none">Check Weather</button>
+                    </div>
                 </div>
                 <span id="error"></span>
                 <div id="show"></div>
                 <div class="weatherSearch">
-                    <h5 id="name"></h5>
-                    <img src="assets/images/weather.png" alt="icon" id="icon" class="weatherIcon"></img>
-                    <h5 id="desc"></h5>
+                    <h3 id="name"></h3>
+                    <img src="assets/images/weather.png" alt="icon" id="icon" class="weatherIcon">
+                    <h3 id="desc"></h3>
                 </div>
                 <div class="row justify-content-center">
-                    <h5 id="tempMin">Min&#176</h5>
-                    <h5 id="tempMax" class="temp">Max&#176</h5>
+                    <h3 id="tempMin">Min&#176;</h3>
+                    <h3 id="tempMax" class="temp">Max&#176;</h3>
                 </div>
             </div>
         </div>
     </section>
+    <!---JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!---JQuery For Date Picker-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!---JS Scripts-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/weather.js"></script>
+    <!---Boostrap Jquery-->
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!---Google Map Scripts-->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
 </body>
-
-<!---Jquery and Bootstrap JS ---->
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script type="text/javascript" src="assets/js/maps.js"></script>
-<script type="text/javascript" src="assets/js/weather.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
-
-
-
-
 
 </html>
