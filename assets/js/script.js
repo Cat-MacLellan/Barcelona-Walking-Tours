@@ -67,5 +67,5 @@ $(function() {
 //Displays booking verification message
 function onSubmit() {
   var text = "Your booking enquiry has been sent!";
-  document.getElementsByClassName("enquiry").innerHTML = text;
+  document.getElementsByClassName("enquiry")[0].innerHTML = text;
 }
