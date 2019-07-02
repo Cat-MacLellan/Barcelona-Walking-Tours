@@ -1,6 +1,7 @@
 // Page scrolls to top when logo is clicked.
 // Logo shrinks as the page moves down.
-window.onscroll = function() { scrollFunction()};
+window.onscroll = function() { scrollFunction() };
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("logo").style.height = "50px";
@@ -64,8 +65,11 @@ function showTourInfo(tourName) {
 $(function() {
   $("#datepicker").datepicker();
 });
-//Displays booking verification message
-function onSubmit() {
-  var text = "Your booking enquiry has been sent!";
-  document.getElementsByClassName("enquiry")[0].innerHTML = text;
+//Sumbits booking enquiry and displays alert message
+function submit_by_id() {
+  var firstName = document.getElementById("firstName").value;
+  var email = document.getElementById("email").value; {
+    document.getElementById("form_id").submit(); //form submission
+    alert("Thank you, " + firstName + ", for sending us a booking enquiry. One of our team will be in touch with you at "  + email + " soon!");
+  }
 }
