@@ -68,8 +68,17 @@ $(function() {
 //Sumbits booking enquiry and displays alert message
 function submit_by_id() {
   var firstName = document.getElementById("firstName").value;
-  var email = document.getElementById("email").value; {
-    document.getElementById("form_id").submit(); //form submission
-    alert("Thank you, " + firstName + ", for sending us a booking enquiry. One of our team will be in touch with you at "  + email + " soon!");
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+  var number = document.getElementById("number").value;
+  var tourName = document.getElementById("tourName").value;
+  var datepicker = document.getElementById("datepicker").value; {
+    if (firstName === '' || email === '' || tourName === '' || datepicker === '' || lastName === '' || number === '') {
+      alert("You forgot to fill in the form!");
+    }
+    else {
+      document.getElementById("form_id").submit();
+      alert("Thank you, " + firstName + ", for sending us a booking enquiry. One of our team will be in touch with you at " + email + " soon!");
+    }
   }
 }

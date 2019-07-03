@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway: 100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One%7CLobster%7CKarla&display=swap');
+
+body {
+    font-family: 'karla', sans-serif;
+}
 
 /*---------------------navbar */
 
