@@ -7,8 +7,8 @@ by promoting walking tours and sustainable living while visiting. I have decided
 been myself, Barcelona in Spain. 
 
 The aims of sustainable tourism is to increase the benefits and to reduce the negative impacts caused by tourism for destinations. This can be achieved by: 
-### Providing authentic tourist experiences that celebrate and conserve heritage and culture. 
-### Creating socio-economic benefits for communities through employment and income earning opportunities. 
+- Providing authentic tourist experiences that celebrate and conserve heritage and culture. 
+- Creating socio-economic benefits for communities through employment and income earning opportunities. 
  
 The website is split into four sections. The first being the ‘home’ section which acts as a menu summarising each section and allows the user to navigate to the three other sections. 
 These remaining sections are titled Walking Tours, Plan Your Trip and Check The Weather. 
