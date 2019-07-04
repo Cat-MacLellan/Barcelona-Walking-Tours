@@ -227,6 +227,10 @@ h3 {
     padding-top: 50px;
 }
 
+.weather-button {
+    padding-top: 10px;
+}
+
 .weatherIcon {
     height: 80px;
     width: 80px;
