@@ -28,28 +28,6 @@ $(document).ready(function() {
 $('a').click(function() {
   $('.navbar-collapse').collapse('hide');
 });
-//Chages section when relevant link is clicked.
-function changeSection(section) {
-  $('.section').each(function(index) {
-    if ($(this).attr("id") == section) {
-      $(this).show('slow');
-    }
-    else {
-      $(this).hide('slow')
-    }
-  });
-  console.log('changed section');
-}
-//Shows map for sections one and two.
-function hideMap() {
-  $('.map').hide('slow')
-  console.log('hide map');
-}
-//Hides Map for weather section.
-function showMap() {
-  $('.map').show('slow')
-  console.log('show map');
-}
 //Displays relevant tour info when tour button is clicked. 
 function showTourInfo(tourName) {
   $('.tour-info').each(function(index) {

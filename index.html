@@ -28,13 +28,13 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tours" onClick="changeSection('tour-section'); showMap();">Walking Tours</a>
+                    <a class="nav-link" href="#tours">Walking Tours</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#plan" onClick="changeSection('plan-section'); showMap();">Plan Your Trip</a>
+                    <a class="nav-link" href="#plan">Plan Your Trip</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#weather" onClick="changeSection('weather-section'); hideMap();">Check The Weather</a>
+                    <a class="nav-link" href="#weather">Check The Weather</a>
                 </li>
             </ul>
         </div>
@@ -62,20 +62,20 @@
                     <img class="mx-auto" src="assets/images/tour_icon.png" alt="tour_icon">
                     <h2>Walking Tours</h2>
                     <p>Our expert led walking tours are a great way to explore Barcelona and they're free! Click explore to see the different tours we have on offer.</p>
-                    <a href="#tours"><button type="button" class="btn btn-one shadow-none"  onClick="changeSection('tour-section'); showMap();">Explore</button>
+                    <a href="#tours"><button type="button" class="btn btn-one shadow-none">Explore</button>
                     </a>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/map_icon.png" alt="map_icon">
                     <h2>Visiting Barcelona?</h2>
                     <p>Reduce the impact of your stay by supporting environmentally friendly accomodation, restaurants and shops.</p>
-                    <a href="#plan"><button type="button" class="btn btn-one shadow-none" onClick="changeSection('plan-section'); showMap();">Explore</button></a>
+                    <a href="#plan"><button type="button" class="btn btn-one shadow-none">Explore</button></a>
                 </div>
                 <div class="col-xs-2 col-md-4">
                     <img class="mx-auto" src="assets/images/weather_icon.png" alt="weather_icon">
                     <h2>Check The Weather</h2>
                     <p>Did you know that you can help the environment by checking the weather before heading out for the day? Find the current weather for any city here.</p>
-                    <a href="#weather"><button type="button" class="btn btn-one shadow-none" onClick="changeSection('weather-section'); hideMap();">Explore</button></a>
+                    <a href="#weather"><button type="button" class="btn btn-one shadow-none">Explore</button></a>
                 </div>
             </div>
         </div>
@@ -91,19 +91,19 @@
             <div class="row justify-content-center text-center">
                 <div class='form-check-inline col-xs-12'>
                     <label class='col-xs-4 form-check-label'>
-                           <button name='type' value='gaudi' type='radio' class='form-check-input btn btn-two shadow-none' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
+                           <button name='tour' value='gaudi' type='radio' class='form-check-input btn btn-two shadow-none' onClick="showTourInfo('gaudi');">Gaudi Tour</button>
                     </label>
                     <label class='col-xs-4 form-check-label'>
-                                <button name='type' value='gothic' type='radio' class='form-check-input btn btn-three shadow-none' onClick="showTourInfo('gothic');">Gothic Tour</button>
+                                <button name='tour' value='gothic' type='radio' class='form-check-input btn btn-three shadow-none' onClick="showTourInfo('gothic');">Gothic Tour</button>
                     </label>
                     <label class='col-xs-4 form-check-label'>
-                                <button name='type' value='culture' type='radio' class='form-check-input btn btn-four shadow-none' onClick="showTourInfo('culture');">Art & Culture</button>
+                                <button name='tour' value='culture' type='radio' class='form-check-input btn btn-four shadow-none' onClick="showTourInfo('culture');">Art & Culture</button>
                     </label>
                     <label class='col-xs-4 form-check-label'>
-                                <button name='type' value='transport' type='radio' class='form-check-input btn btn-five shadow-none' onClick="showTourInfo('transport');">Urban Transport</button>
+                                <button name='tour' value='transport' type='radio' class='form-check-input btn btn-five shadow-none' onClick="showTourInfo('transport');">Urban Transport</button>
                     </label>
                     <label class='col-xs-4 form-check-label'>
-                                <button name='type' value='thefuture' type='radio' class='form-check-input btn btn-six shadow-none' onClick="showTourInfo('future');">The Future</button>
+                                <button name='tour' value='thefuture' type='radio' class='form-check-input btn btn-six shadow-none' onClick="showTourInfo('future');">The Future</button>
                     </label>
                 </div>
             </div>
@@ -196,6 +196,9 @@
             </div>
         </div>
     </section>
+    <div class='container map'>
+        <div id='map'></div>
+    </div>
     <!---Plan Section-->
     <section>
         <div id="plan-section" class='container section'>
@@ -223,8 +226,9 @@
         </div>
     </section>
     <!---Google Map-->
+
     <div class='container map'>
-        <div id='map'></div>
+        <div id='mapTwo'></div>
     </div>
     <!---Find Weather Section-->
     <section>

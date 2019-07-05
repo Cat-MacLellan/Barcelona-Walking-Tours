@@ -201,13 +201,16 @@ h3 {
 
 /*---------------------plan-section */
 
-#plan-section {
-    display: none;
-}
+
 
 /*---------------------map */
 
 #map {
+    height: 300px;
+    border-radius: 5px;
+}
+
+#mapTwo {
     height: 300px;
     border-radius: 5px;
 }
@@ -219,7 +222,6 @@ h3 {
 /*---------------------weather-section */
 
 #weather-section {
-    display: none;
     padding-bottom: 30px;
 }
 
