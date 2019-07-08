@@ -9,6 +9,7 @@ The aims of sustainable tourism is to increase the benefits and to reduce the ne
 
 - Providing authentic tourist experiences that celebrate and conserve heritage and culture. 
 - Creating socio-economic benefits for communities through employment and income earning opportunities. 
+
  
 The website is split into four sections. The first being the ‘home’ section which acts as a menu summarising each section and allows the user to navigate to the three other sections. 
 These remaining sections are titled Walking Tours, Plan Your Trip and Check The Weather. 
@@ -38,7 +39,7 @@ multiple cities using the Google Map and weather finder.
 
 The overall aim for this single page website is to look clean, clear and straightforward to use. This has been achieved by using a simple colour scheme throughout the site and creating a lot of space between the sections with padding. The site also uses some Jquery show/hide to avoid over cluttering the page and providing an interactive element.
 
-The user should have the feeling that they are able to ‘flow’ through the different sections of the site. The use of smooth scrolling by from the navbar or using the ‘explore’ buttons provides this affect.
+The user should have the feeling that they are able to ‘flow’ through the different sections of the site. The use of smooth scrolling by from the navbar or using the ‘explore’ buttons provides this effect.
 
 The UX design is explained further in the wireframes below. NB: there are some differences between the wireframes and the finished design.
 
@@ -61,7 +62,7 @@ can easily return to.
 When a user clicks one of the tours, text descibing the tour will appear below the buttons and google markers will appear on the map showing the landmarks that
 specific tour will pass. The text is hidden to avoid having a high amount of text on the page and makes it clear which information applies to which tour. The colour
 of the buttons also matches the google map icons providing a clear correllation between the tour and it's landmarks. This provides an interactive and visualling 
-pleasing way to present the informationt to the user.
+pleasing way to present the information to the user.
 
 ![Wireframe 5](https://i.ibb.co/tCQmqJf/Tours-Desktop.png)
 ![Wireframe 6](https://i.ibb.co/SVHfPGJ/Tours-Mobile.png)
