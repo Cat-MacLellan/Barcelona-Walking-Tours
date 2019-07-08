@@ -44,40 +44,40 @@ The UX design will be further explained in the wireframes below. NB: there are s
 
 ## Wireframes
 
-![Wireframe 1](https://i.ibb.co/VQ3TKZ6/Header-Desktop.png)
-![Wireframe 2](wireframes/Header mobile.png)
+![Wireframe 1](https://i.ibb.co/VQ3TKZ6/Header-Desktop.png =100x100)
+![Wireframe 2](https://i.ibb.co/j46FnBG/Header-mobile.png =100x100)
 
 The site using a static navbar on both mobile and desktop which allows the user to move around the different sections of the website easily. The navbar shirnks 
 as the user moves down the page allowing the logo to be more noticable when the site has first loaded. 
 
 There is an eye-catching masthead showing a birds-eye view of Barcelona and a button allowing the user to "Explore" further. 
 
-![Wireframe 3](wireframes/Home - Desktop.png)
-![Wireframe 4](wireframes/Home - Mobile.png)
+![Wireframe 3](https://i.ibb.co/BGY53B1/Home-Desktop.png =100x100)
+![Wireframe 4](https://i.ibb.co/bdcKL7H/Home-Mobile.png =100x100)
 
 This "Explore" button moves the site to the home section. This section is acts as a clean introduction to the site and another point of navigation that the user 
 can easily return to. 
 
-![Wireframe 5](wireframes/Tours - Desktop.png)
-![Wireframe 6](wireframes/Tours - Mobile.png)
+![Wireframe 5](https://i.ibb.co/tCQmqJf/Tours-Desktop.png =100x100)
+![Wireframe 6](https://i.ibb.co/SVHfPGJ/Tours-Mobile.png =100x100)
 
 When a user clicks one of the tours, text descibing the tour will appear below the buttons and google markers will appear on the map showing the landmarks that
 specific tour will pass. The text is hidden to avoid having a high amount of text on the page and makes it clear which information applies to which tour. The colour
 of the buttons also matches the google map icons providing a clear correllation between the tour and it's landmarks. This provides an interactive and visualling 
 pleasing way to present the informationt to the user.
 
-![Wireframe 7](wireframes/Sustainable Tourism - Desktop.png)
-![Wireframe 8](wireframes/Sustainable Tourism - Mobile.png)
+![Wireframe 7](https://i.ibb.co/RhgqkWH/Sustainable-Tourism-Desktop.png =100x100)
+![Wireframe 8](https://i.ibb.co/4snXsX8/Sustainable-Tourism-Mobile.png =100x100)
 
 Both the walking tours and plan your trip sections are similar with the differences being the text and buttons. The same Google Map is used to avoid the website
 loading to many features and slowing down. 
 
-![Wireframe 9](wireframes/Booking Enquiry Modal.png)
+![Wireframe 9](https://i.ibb.co/4V9sYCp/Booking-Enquiry-Modal.png =100x100)
 
 The booking enquiry modal for desktop is straightforward and easy to use. This will be full screen on mobile with the ability to close the modal.
 
-![Wireframe 10](wireframes/Check The Weather - desktop.png)
-![Wireframe 11](wireframes/Check The Weather - mobile.png)
+![Wireframe 10](https://i.ibb.co/VpsvGCF/Check-The-Weather-desktop.png =100x100)
+![Wireframe 11](https://i.ibb.co/Fb8cKkR/Check-The-Weather-mobile.png =100x100)
 
 The Check The Weather section is simple and clear. There is a placeholder image and text which will change to the details of the valid city that the user has inputted. 
 
