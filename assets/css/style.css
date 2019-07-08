@@ -141,7 +141,7 @@ h3 {
 /*---------------------home */
 
 .home {
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .home img {
@@ -150,6 +150,10 @@ h3 {
 }
 
 /*---------------------tour */
+
+#tour-section {
+    padding-top: 100px;
+}
 
 .tour-icons {
     padding-bottom: 40px;
@@ -201,7 +205,9 @@ h3 {
 
 /*---------------------plan-section */
 
-
+#plan-section {
+    padding-top: 100px;
+}
 
 /*---------------------map */
 
@@ -222,6 +228,7 @@ h3 {
 /*---------------------weather-section */
 
 #weather-section {
+    padding-top: 100px;
     padding-bottom: 30px;
 }
 

@@ -208,7 +208,7 @@ function initMap() {
             mkr.setMap(null);
         });
     };
-    // Adds the markers when a button is clicked.
+    // Adds the markers when a button is clicked. Markers filtered by 'Tour'.
     Array.prototype.slice.call(document.querySelectorAll('button[type="radio"][name="tour"]')).forEach(function(input) {
         input.addEventListener('click', function(e) {
             if (this.value) {
@@ -221,7 +221,7 @@ function initMap() {
             }
         });
     });
-
+//Options for second Google Map
     let optionsTwo = {
         center: new google.maps.LatLng(41.3851, 2.1734),
         zoom: 10
@@ -250,7 +250,7 @@ function initMap() {
             mkr.setMap(null);
         });
     };
-    // Adds the markers when a button is clicked.
+    // Adds the markers when a button is clicked. Markers filtered by 'Type'.
     Array.prototype.slice.call(document.querySelectorAll('button[type="radio"][name="type"]')).forEach(function(input) {
         input.addEventListener('click', function(e) {
             if (this.value) {

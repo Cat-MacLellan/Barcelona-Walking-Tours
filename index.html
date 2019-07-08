@@ -9,8 +9,6 @@
     <!---Bootstrap and Style Sheets-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <!---JQuery Styling for Date Picker-->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body id="page-top">
@@ -107,6 +105,10 @@
                     </label>
                 </div>
             </div>
+            <div id="book" class="text-center">
+                <button class="btn btn-one shadow-none" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                <div id="enquiry"></div>
+            </div>
             <div id="gaudi" class="tour-info">
                 <div>
                     <p>Barcelona would not be the city it is without the amazing work of Antonio Gaudi. Gaudi's unique, creative and un-mistakable work can be admired across the city.</p>
@@ -133,11 +135,6 @@
                     <p>With the increasing concerns over climate change and the environment, cities worldwide are looking into sustainable architecture and environmentally friendly designs. On this tour, you will be guided around the city's most modern,
                         sustainable building and reflect on the future of the city's skyline</p>
                 </div>
-            </div>
-            <!---Booking Enquiry Validation-->
-            <div id="book" class="text-center">
-                <button class="btn btn-one shadow-none" data-toggle="modal" data-target="#bookingModal">Book Now</button>
-                <div id="enquiry"></div>
             </div>
         </div>
         <!--Booking Modal -->
@@ -176,10 +173,10 @@
                                 </select>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" name="date" id="datepicker" placeholder="Select A Date" required/>
+                                <input class="form-control" type="date" id="datepicker" placeholder="Select A Date" required/>
                             </div>
                             <div class="modal-form">
-                                <input class="form-control" type="text" name="firstName" id="firstName" placeholder="Frist Name" required/>
+                                <input class="form-control" type="text" name="firstName" id="firstName" placeholder="First Name" required/>
                             </div>
                             <div class="modal-form">
                                 <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
@@ -196,6 +193,7 @@
             </div>
         </div>
     </section>
+    <!---Tours Google Map-->
     <div class='container map'>
         <div id='map'></div>
     </div>
@@ -225,8 +223,7 @@
             </div>
         </div>
     </section>
-    <!---Google Map-->
-
+    <!---Plan Google Map-->
     <div class='container map'>
         <div id='mapTwo'></div>
     </div>
@@ -270,18 +267,16 @@
     </footer>
     <!---JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!---JQuery For Date Picker-->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!---JS Scripts-->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/weather.js"></script>
     <!---Boostrap Jquery-->
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!---Google Map Scripts-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGkbylwa92jo925hY5M6JR70lvD6nCLs&callback=initMap"></script>
+    <!---JS Scripts-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/weather.js"></script>
+
 </body>
 
 </html>

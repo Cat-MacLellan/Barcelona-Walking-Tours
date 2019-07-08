@@ -1,7 +1,6 @@
 // Page scrolls to top when logo is clicked.
 // Logo shrinks as the page moves down.
 window.onscroll = function() { scrollFunction() };
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("logo").style.height = "50px";
@@ -17,9 +16,9 @@ $(document).ready(function() {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 200
       }, 1000, function() {
-        window.location.hash = hash;
+     //   window.location.hash = hash;
       });
     }
   });
@@ -39,10 +38,6 @@ function showTourInfo(tourName) {
     }
   });
 }
-//Displays date picker calender
-$(function() {
-  $("#datepicker").datepicker();
-});
 //Sumbits booking enquiry and displays alert message
 function submit_by_id() {
   var firstName = document.getElementById("firstName").value;
