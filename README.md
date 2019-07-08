@@ -44,7 +44,7 @@ The UX design will be further explained in the wireframes below. NB: there are s
 
 ## Wireframes
 
-![Wireframe 1](https://ibb.co/cCxQmHq)
+![Wireframe 1](https://i.ibb.co/VQ3TKZ6/Header-Desktop.png)
 ![Wireframe 2](wireframes/Header mobile.png)
 
 The site using a static navbar on both mobile and desktop which allows the user to move around the different sections of the website easily. The navbar shirnks 
